@@ -1,0 +1,10 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Http\\\\Kernel::appendMiddlewareToGroup\\(\\)\\.$#"
+			count: 1
+			path: src/MultilingualServiceProvider.php
+		-
+			message: '#should return \$this\(Lankhaar\\Multilingual\\Routing\\UrlGenerator\) but returns Illuminate\\Routing\\UrlGenerator#'
+			count: 6
+			path: src/Routing/UrlGenerator.php

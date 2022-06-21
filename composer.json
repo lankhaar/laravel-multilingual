@@ -1,0 +1,43 @@
+{
+    "name": "lankhaar/laravel-multilingual",
+    "description": "Add a language switcher to your multilingual Laravel application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arjan Lankhaar",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lankhaar\\Multilingual\\MultilingualServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "analyze": "vendor/bin/phpstan analyse"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lankhaar\\Multilingual\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lankhaar\\Multilingual\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.5",
+        "phpstan/phpstan": "^1.7"
+    }
+}
